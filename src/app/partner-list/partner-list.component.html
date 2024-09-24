@@ -1,0 +1,8 @@
+<h2>Lista Compañeros!</h2>
+<ul>
+    <li *ngFor = "let partner of partners; 
+    let i = index">
+        NOMBRE: {{partner.name}} - GENERO: {{partner.gender}}
+        <button (click) = "deletePartner(i)">eliminar</button>
+    </li>
+</ul>

@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { ListaComponent } from './lista/lista.component';
+import { PartnerListComponent } from './partner-list/partner-list.component';
+import { PartnerAddComponent } from "./partner-add/partner-add.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ListaComponent],
+  imports: [RouterOutlet, PartnerListComponent, PartnerAddComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
